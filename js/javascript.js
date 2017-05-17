@@ -14,13 +14,12 @@
  *      -Numbers divisible by 5 and not 3 print "Buzz".
  *      -When it is working, numbers divisible by 3 and 5 print "FizzBuzz'.
  */
-//end
 var inputWordss = prompt('Enter in a word: ');
 var inputLetterss = prompt('Enter in a letter to compare: ');
 document.write("Intro to java script");
 countBs();
 countBsTwo(inputWordss, inputLetterss);
-//fizzBuzz();
+fizzBuzz();
 function countBs(){
     var word = "Bat";
     var letterCount = 0;
