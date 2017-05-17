@@ -14,11 +14,13 @@
  *      -Numbers divisible by 5 and not 3 print "Buzz".
  *      -When it is working, numbers divisible by 3 and 5 print "FizzBuzz'.
  */
-
+//end
+var inputWordss = prompt('Enter in a word: ');
+var inputLetterss = prompt('Enter in a letter to compare: ');
 document.write("Intro to java script");
 countBs();
-
-
+countBsTwo(inputWordss, inputLetterss);
+//fizzBuzz();
 function countBs(){
     var word = "Bat";
     var letterCount = 0;
@@ -33,8 +35,53 @@ function countBs(){
     console.log("The amount of B's in here: " + letterCount);
 }
 
+function countBsTwo(inputWord, inputLetter){
+    var letterCount = 0;
+    for(var i = 0; i < inputWord.length; i++){
+       var letter = inputWord.charAt(i);
+       if(letter == inputLetter){
+            letterCount++;
+       }
+    }
+    
+    document.write("The amount of " + inputLetter + " in here: " + letterCount);
 
+    console.log("The amount of " + inputLetter + " in here: " + letterCount +" \n");
+   
+}
 
+function fizzBuzz(){
+            
+    for(var i = 1; i < 101; i++){
+
+        if((i%3 === 0) && (i%5 !== 0)){
+            console.log("Fizz");
+          
+          
+        }
+        
+        else if((i%5 === 0) && (i%3 !==0)){
+            console.log("Buzz");
+           
+          
+        }
+        
+        else if((i%5 === 0) && (i%3 === 0)){
+            console.log("FizzBuzz");
+         
+           
+        }
+        
+        
+        else{
+          console.log(i);
+          
+        }
+        
+        
+    }
+
+}
 
 
 //countBs(inputWord, inputLetter);
